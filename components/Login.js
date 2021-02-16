@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
     },
     title:{
         fontSize: 20,
-        color:"#fff"
+        color:"#fff",
+        marginTop:10
     },
     logocontainer:{
         flexGrow:1,

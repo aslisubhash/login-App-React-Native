@@ -11,10 +11,11 @@ export default class LoginForm extends Component {
                 />
                 <TextInput 
                 placeholder="Password"
+                secureTextEntry={true}
                 style = {styles.input}
                 />
-                <TouchableOpacity>
-                    <Text>LogIn</Text>
+                <TouchableOpacity style={styles.buttoncontainer}>
+                    <Text style={styles.btntext}>LogIn</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -33,4 +34,15 @@ const styles = StyleSheet.create({
         backgroundColor:"rgba(255,255,255, 0.8)",
         marginBottom:10
     },
+    buttoncontainer:{
+        backgroundColor:"green",
+        paddingVertical:15,
+    },
+    btntext:{
+        color:"#fff",
+        fontSize:20,
+        textAlign:"center",
+        fontWeight:"bold"
+        
+    }
 })
